@@ -23,7 +23,7 @@ namespace TestSqGit
 
         private async Task CheckForUpdate()
         {
-            using(var manager = new UpdateManager(@"C:\Temp\Releases"))
+            using(var manager = new UpdateManager(@"https://github.com/mkdinindu/TestSqGit"))
             {
                 await manager.UpdateApp();
             }
